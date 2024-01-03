@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Text Path Example</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffffff;
+        }
+
+        svg {
+            width: 900px;
+            height: 780px;
+            display: block;
+        }
+
+        text {
+            font-size: 16px;
+            fill: rgb(31, 147, 255);
+        }
+    </style>
+</head>
+<body>
+    <svg viewBox="1 0 900 780">
+        <defs>
+            <path id="textpath" d="m2.16,14.83s31.89-2.62,50.02,29.64c0,0,119.76-109.18,210.39,16.56,0,0-76.23,106.13-209.44,11.17,0,0-26.18,39.39-52.34,29.58,0,0,30.63-42.82,1.38-86.96"/>
+        </defs>
+
+        <text>
+            <textPath xlink:href="#textpath">
+                If you give a man a fish, he will be hungry tomorrow. If you teach a man to fish, he will be richer forever.
+            </textPath>
+        </text>
+    </svg>
+</body>
+</html>
